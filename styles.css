@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+   box-sizing: 0;
+    margin: 0;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70%;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "MS Sans Serif 1", sans-serif;
+   
+}
+
+header h2{
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30vh;
+    gap: 30px;
+}
+
+main h1{
+    font-size: 96px;
+    font-family: "MS Sans Serif 1", sans-serif;
+    font-weight: 500;
+}
+
+
+main p{
+    font-size: 24px;
+}
+
+main button {
+    width: 250px;
+    height: 38px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+ cursor: pointer;
+}
+
+
+
+main button p{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
