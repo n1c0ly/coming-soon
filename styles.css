@@ -1,66 +1,119 @@
-*{
-    padding: 0;
-   box-sizing: 0;
+/* Reset básico */
+* {
     margin: 0;
-
-}
-
-body{
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo global */
+  body {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-}
-
-header{
-    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70%;
+    padding: 0 1rem;
+    font-family: sans-serif;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
     padding-top: 40px;
+  }
+  
+  /* Título do cabeçalho */
+  header h2 {
     font-family: "MS Sans Serif 1", sans-serif;
-   
-}
-
-header h2{
     font-weight: 400;
-}
-
-main{
+    font-size: 1.4rem;
+  }
+  
+  /* Conteúdo principal */
+  main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding-top: 30vh;
-    gap: 30px;
-}
-
-main h1{
-    font-size: 96px;
+    padding-top: 20vh;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  /* Título principal */
+  main h1 {
     font-family: "MS Sans Serif 1", sans-serif;
+    font-size: 5rem;
     font-weight: 500;
-}
-
-
-main p{
-    font-size: 24px;
-}
-
-main button {
+  }
+  
+  /* Parágrafo */
+  main p {
+    font-size: 1.5rem;
+  }
+  
+  /* Botão */
+  main button {
     width: 250px;
-    height: 38px;
-    background-color: transparent;
+    height: 40px;
+    background: transparent;
     border: 2px solid black;
     border-radius: 8px;
- cursor: pointer;
-}
-
-
-
-main button p{
-    font-size: 16px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
+  
+  main button p {
+    font-size: 16px;
+  }
+  
+  /* Responsividade para tablets e celulares */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    header h2 {
+      font-size: 1.2rem;
+    }
+  
+    main {
+      padding-top: 10vh;
+      gap: 30px;
+    }
+  
+    main h1 {
+      font-size: 3rem;
+    }
+  
+    main p {
+      font-size: 1.2rem;
+    }
+  
+    main button {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main h1 {
+      font-size: 2.4rem;
+    }
+  
+    main p {
+      font-size: 1rem;
+    }
+  
+    header h2 {
+      font-size: 1rem;
+    }
+  }
+  
